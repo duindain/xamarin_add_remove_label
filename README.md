@@ -1,4 +1,4 @@
-Demonstration of a bug in Xamarin Forms 4.6.0.847 and 4.5.0
+Demonstration of a bug in Xamarin Forms 4.6.0.847 - 4.4.0.991757 and probably more
 
 If you add a label to a vertical stack layout programatically then remove it then readd setting the stacklayout to IsVisible false each time when it has no children
 
