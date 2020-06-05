@@ -8,6 +8,19 @@ There was a similiar bug in GTK https://github.com/xamarin/Xamarin.Forms/issues/
 
 This bug is present in both Android and iOS
 
+To reproduce the bug;
+  run the solution
+  Click the Add label button
+    Label and stacklayout are correctly shown
+  Click the remove label button
+    Label is removed from stacklayout 
+    As there are no children the stacklayout is set to IsVisible false correctly
+  Click the Add Label button
+    Label is added to stacklayout
+    Stacklayout is set to IsVisible true
+    Stacklayout is shown
+    Label is not shown
+
 Workaround:
 
 Set the stacklayout to IsVisible true before adding the dynamic content and the content will be correctly shown
