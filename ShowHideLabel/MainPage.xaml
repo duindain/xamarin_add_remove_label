@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vms="clr-namespace:ShowHideLabel"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    x:Class="ShowHideLabel.MainPage">
+
+    <ContentPage.BindingContext>
+        <vms:MainPageVM/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+
+        <StackLayout
+            x:Name="stacklayout"
+            BackgroundColor="Beige"
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            Padding="10"
+            IsVisible="false"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+
+            <Button Text="Add Label" Command="{Binding AddLabelTouch}"/>
+            <Button Text="Remove Label" Command="{Binding RemoveLabelTouch}"/>
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
