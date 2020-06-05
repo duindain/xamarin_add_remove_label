@@ -21,6 +21,10 @@ To reproduce the bug;
   - Stacklayout is shown
   - **Label is not shown**
 
+First dynamic label add              |  Second dynamic label add
+:-------------------------:|:-------------------------:
+<img src="https://github.com/duindain/xamarin_add_remove_label/blob/master/screenshots/first_label_added.png" width="300" height="550"> | <img src="https://github.com/duindain/xamarin_add_remove_label/blob/master/screenshots/second_label_added.png" width="300" height="550">
+
 Workaround:
 
 Set the stacklayout to IsVisible true before adding the dynamic content and the content will be correctly shown
